@@ -19,7 +19,7 @@ https://templatemo.com/tm-567-nomad-force
   --title-color:                  #565758;
   --p-color:                      #000000;
 
-  --body-font-family:           'Noto Sans JP', sans-serif;
+  --body-font-family:           sans-serif;
 
   --h1-font-size:               72px;
   --h2-font-size:               42px;
@@ -236,7 +236,7 @@ strong {
   color: var(--primary-color);
   font-size: 36px;
   font-weight: var(--font-weight-bold);
-  padding: 5;
+  padding: 5px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -267,10 +267,11 @@ strong {
 }
 
 .navbar-nav .nav-link {
-  color: var(--p-color);
+  color: rgb(2, 2, 234);
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
   position: relative;
+  text-decoration: underline;
 }
 
 .navbar-nav .nav-link:hover::after,
@@ -285,7 +286,7 @@ strong {
 .navbar-nav .nav-item.active .nav-link,
 .nav-link:focus, 
 .nav-link:hover {
-  color: var(--dark-color);
+  color: rgb(0, 144, 192)
 }
 
 .nav-link:focus {
@@ -305,6 +306,78 @@ strong {
   color: #0003be;
   font-weight: 700;
 }
+
+/* Media queries for responsive text size and padding */
+@media (max-width: 1200px) {
+  .navbar-brand {
+    font-size: 30px;
+  }
+  .navbar-text-start, .navbar-text-end {
+    font-size: 16px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 26px;
+  }
+  .navbar-text-start, .navbar-text-end {
+    font-size: 14px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 22px;
+  }
+  .navbar-text-start, .navbar-text-end {
+    font-size: 12px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.4rem;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+  .navbar-text-start, .navbar-text-end {
+    font-size: 10px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
+
+/* Ensure nav items are side by side on small and medium screens */
+.navbar-nav {
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-wrap: nowrap;
+  }
+}
+
+
 /*---------------------------------------
   HERO              
 -----------------------------------------*/
