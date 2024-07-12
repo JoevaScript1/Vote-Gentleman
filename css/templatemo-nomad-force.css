@@ -639,8 +639,7 @@ strong {
   text-transform: uppercase;
   padding: 16px;
   transition: all 0.6s ease-out;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 .contact-form button[type='submit']:hover {
@@ -796,4 +795,43 @@ strong {
 
 #contact{
   padding-bottom: 6rem;
+}
+:root {
+  --h1-font-size: 72px;
+  --h2-font-size: 42px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 45px;
+  --h6-font-size: 22px;
+  --p-font-size: 33px;
+  --copyright-text-font-size: 14px;
+  --custom-link-font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --h1-font-size: 64px;
+    --h2-font-size: 36px;
+    --h3-font-size: 32px;
+    --h4-font-size: 28px;
+    --h5-font-size: 40px;
+    --h6-font-size: 20px;
+    --p-font-size: 30px;
+    --copyright-text-font-size: 12px;
+    --custom-link-font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1-font-size: 56px;
+    --h2-font-size: 32px;
+    --h3-font-size: 28px;
+    --h4-font-size: 24px;
+    --h5-font-size: 35px;
+    --h6-font-size: 18px;
+    --p-font-size: 27px;
+    --copyright-text-font-size: 10px;
+    --custom-link-font-size: 8px;
+  }
 }
